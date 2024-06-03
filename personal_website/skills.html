@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="İsmail Emre Uçar - Contact Infos" >
+        <title>Main Page</title>
+
+        <link rel="stylesheet" href="ucar.css">
+        <script type="text/javascript" src="ucar.js"></script>
+        <style>
+            body {background-color: rgb(93, 87, 87);}
+        </style>
+    </head>
+    <body>
+        <!--site girisinde sound-->
+        <audio id="audioPlayer">
+            <source src="tus.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        <!-- karanlik tema ve sarki pause'lamak icin iki tane ikon vardir -->
+        <span id="dark" style=" top: 6%; right: 55%; position: absolute;"><img src="darkicon.png" alt="darktheme" width="100" height="100"  id="darkicon" onmousedown="darkTheme()"></span>
+        <span id="mute" style=" top: 16%; right: 55.5%; position: absolute;"><img src="mute.ico" alt="mute" width="80" height="80"  id="darkicon" onmousedown="muteSong()"></span>
+        <script>
+            window.onload = function() {
+                setVolumeTo10(); // sesi %10 a set etmek icin sayfa yuklendiginde func cagirir
+            };
+        </script>
+            <h1>Welcome and Enjoy</h1>
+        <p>
+            <a class="tags" href="main.html" id="tag1" onmouseover="increaseBorder('tag1')" onmouseout="resetBorder('tag1')">
+                Main Page </a>
+        </p>
+        <p>
+            <a class="tags" href="skills.html" id="tag2" onmouseover="increaseBorder('tag2')" onmouseout="resetBorder('tag2')">
+                Skills </a>
+        </p>
+        <p>
+            <a class="tags" href="feedback.html" id="tag3" onmouseover="increaseBorder('tag3')" onmouseout="resetBorder('tag3')">
+                Feedback </a>
+        </p>
+            <div style="display: flex;">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th style="text-align: center;">Engineering Software Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ansys Static Structural Analysis</td>
+                        </tr>
+                        <tr>
+                            <td>Autocad</td>
+                        </tr>
+                        <tr>
+                            <td>BladeGen</td>
+                        </tr>
+                        <tr>
+                            <td>CFTurbo</td>
+                        </tr>
+                        <tr>
+                            <td>CFX Solver</td>
+                        </tr>
+                        <tr>
+                            <td>Design Modeler</td>
+                        </tr>
+                        <tr>
+                            <td>Fluent Ansys</td>
+                        </tr>
+                        <tr>
+                            <td>Matlab</td>
+                        </tr>
+                        <tr>
+                            <td>Modal Analysis</td>
+                        </tr>
+                        <tr>
+                            <td>Harmonic Response (ANSYS)</td>
+                        </tr>
+                        <tr>
+                            <td>Solidworks</td>
+                        </tr>
+                        <tr>
+                            <td>SpaceClaim</td>
+                        </tr>
+                        <tr>
+                            <td>TurboGrid</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Programming Software Skills</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> CSS</td>
+                        </tr>
+                        <tr>
+                            <td> HTML</td>
+                        </tr>
+                        <tr>
+                            <td> Java</td>
+                        </tr>
+                        <tr>
+                            <td> Javascript</td>
+                        </tr>
+                        <tr>
+                            <td> Python</td>
+                        </tr>
+                        <tr>
+                            <td> SQL</td>
+                        </tr>
+                        <tr>
+                            <td> Visual Basic Application</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
+        

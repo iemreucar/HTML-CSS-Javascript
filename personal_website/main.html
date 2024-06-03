@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="İsmail Emre Uçar - Contact Infos" >
+        <title>Main Page</title>
+
+        <link rel="stylesheet" href="ucar.css">
+        <script type="text/javascript" src="ucar.js"></script>
+        <style>
+            body {background-color: rgb(93, 87, 87);}
+        </style>
+    </head>
+    <body>
+        <!--site girisinde sound-->
+        <audio id="audioPlayer">
+            <source src="tus.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        <!-- karanlik tema ve sarki pause'lamak icin iki tane ikon vardir -->
+        <span id="dark" style=" top: 6%; right: 55%; position: absolute;"><img src="darkicon.png" alt="darktheme" width="100" height="100"  id="darkicon" onmousedown="darkTheme()"></span>
+        <span id="mute" style=" top: 16%; right: 55.5%; position: absolute;"><img src="mute.ico" alt="mute" width="80" height="80"  id="darkicon" onmousedown="muteSong()"></span>
+        <script>
+            window.onload = function() {
+                setVolumeTo10(); // sesi %10 a set etmek icin sayfa yuklendiginde func cagirir
+            };
+        </script>
+            <h1>Welcome and Enjoy</h1>
+        <p>
+            <a class="tags" href="main.html" id="tag1" onmouseover="increaseBorder('tag1')" onmouseout="resetBorder('tag1')">
+                Main Page </a>
+        </p>
+        <p>
+            <a class="tags" href="skills.html" id="tag2" onmouseover="increaseBorder('tag2')" onmouseout="resetBorder('tag2')">
+                Skills </a>
+        </p>
+        <p>
+            <a class="tags" href="feedback.html" id="tag3" onmouseover="increaseBorder('tag3')" onmouseout="resetBorder('tag3')">
+                Feedback </a>
+        </p>
+    
+    
+    <span><img src="ieu.jpg" alt="iemreucar" id="photo"></span>
+    <button onclick="togglePhoto('photo')">Show/Hide Photo</button>
+    <br>
+    <!-- tablolarin yanyana gelmesi icin div, flex -->
+    <div style="display: flex;">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align: center;">Personal Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Name & Surname</th>
+                    <td>İsmail Emre Uçar</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+90 555 6042049</td>
+                </tr>
+                <tr>
+                    <th>Adress</th>
+                    <td>Tantavi Mah. Basiret Sok. No:2/9 Umraniye/ISTANBUL</td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td>iemreucar@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Date of birth</th>
+                    <td>05.05.1991</td>
+                </tr>
+                <tr>
+                    <th>Citizenship</th>
+                    <td>Turkey</td>
+                </tr>
+                <tr>
+                    <th>Marital Status</th>
+                    <td>Single</td>
+                </tr>
+                <tr>
+                    <th>Languages</th>
+                    <td>Turkish and English</td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <th>Military Status</th>
+                    <td>Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2" style="text-align: center;"> Education and Certification</th>
+                </tr>
+            </thead>
+            <tr>
+                <th><a href="www.itu.edu.tr">Istanbul Technical University</a></th>
+                <td>Bachelor of Science, Mechanical Engineering</td>
+            </tr>
+            <tr>
+                <th><a href="www.medeniyet.edu.tr">Istanbul Medeniyet University</a></th>
+                <td>Master of Science, Nanoscience and Nanoengineering</td>
+            </tr>
+            <tr>
+                <th><a href="www.itu.edu.tr">Istanbul Technical University</a></th>
+                <td>Non-thesis Master's program, Information Technologies</td>
+            </tr>
+        </table>
+
+        <script src="ucar.js"></script>
+
+
+        </div>
+
+    </body>
+</html>
+
